@@ -1,0 +1,134 @@
+@charset "utf-8" ; 
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=IBM+Plex+Sans+KR&family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* 초기화 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none ;
+}
+/* 전체 레이아웃 */
+.pr{
+    width: 80%;
+    margin: 0 auto;
+    /* background-color: antiquewhite; */
+}
+/* 상단 */
+header{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between ; 
+    align-items:  flex-start ;
+    background-color:#43d9d9;
+}
+/* 로고 */
+.logo{
+    font-family: "Goldman", sans-serif;
+    width: 30%;
+    line-height: 100px;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+}
+.logo:hover{
+    background-color: white;
+    color: black;
+}
+/* 메뉴 */
+header nav{
+    /* background-color: red; */
+    width: 40%;
+    /* height: 50px ; */
+    display: flex;
+    justify-content: space-around ; 
+    align-items: center;
+}
+header nav a{
+    width: calc(100% / 4 ) ;
+    line-height: 50px;
+    text-align: center;
+    background-color:  #07e819  ;
+    color: #B026FF ;
+}
+header nav a:hover{
+    background-color: #b026ff ; 
+    color: #07e819 ; 
+    width: calc( 100% / 4 ) ; 
+    height: 100%;
+    text-align: center;
+}
+/* 메인 */
+main{
+    font-family: "IBM Plex Sans KR", sans-serif;
+    background-color: #A0D468 ;
+    padding: 30px;
+    padding-bottom: 100px;
+}
+.explan{
+    display: flex ; 
+    gap: 30px;
+}
+.exp_exp{
+    width: 50%;
+    background-color: #591943 ;
+    color: #43d9d9;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 24px;
+}
+section hr{
+    border: 0px;
+    border: 1px solid black ;
+    margin-bottom: 20px;
+}
+/* 제목 */
+section h2,
+section h3,
+section h4{
+    margin: 10px ; 
+}
+section h2{
+    margin-top: 30px;
+    color: #0d0d0d ;
+}
+/* 이미지 */
+.exp_img{
+    width: 50%;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: red;
+}
+.exp_img img{
+    width: 100%;
+    display: block;
+    filter: blur(1px);
+    transition: all 0.3s;
+}
+.exp_img img:hover{
+    transform: scale(1.1);
+    filter: blur(0px);
+}
+/* 자세한 설명  */
+.exp_top{
+    margin-bottom: 20px;
+}
+section p{
+    margin: 10px;
+}
+/* 후터 */
+footer{
+    color: white;
+    background-color: black;
+    padding: 30px;
+    display: flex;
+    justify-content: flex-end
+}
+footer nav a{
+    color: white;
+    margin: 0 20px;
+}
